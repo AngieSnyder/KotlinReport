@@ -2,36 +2,119 @@
 <html lang="en">
 
 <head>
-    <title>Kotlin Features</title>
+    <title>Kotlin Examples</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="kotlin.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Kotlin</a>
+        <a class="navbar-brand" href="index.html">Kotlin</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item ">
-                    <a class="nav-link" href="#">History <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="kotlinhistory.html">History </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="kotlinfeatures.html">Features</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Examples</a>
+                    <a class="nav-link" href="kotlinexamples.html">Examples <span class="sr-only">(current)</span></a>
                 </li>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Feedback</a>
+                    <a class="nav-link" href="kotlinfeedback.html">Feedback</a>
                 </li>
             </ul>
         </div>
     </nav>
 </body>
+
+<div>
+    <div>
+        <H1>Kotlin Code Examples</H1>
+
+        <h4>Example 1: How to Print an Integer entered by an user in Kotlin using Scanner</h4>
+
+        <code> import java.util.Scanner <br/>
+
+fun main(args: Array<String>) {<br/>
+
+    // Creates a reader instance which takes<br/>
+    // input from standard input - keyboard<br/>
+    val reader = Scanner(System.`in`)<br/>
+    print("Enter a number: ")<br/>
+
+    // nextInt() reads the next integer from the keyboard<br/>
+    var integer:Int = reader.nextInt()<br/>
+
+    // println() prints the following line to the output screen<br/>
+    println("You entered: $integer")<br/>
+}
+</code>
+    </div>
+    <div>
+
+        <h4>Example 2: Kotlin Program to Add Two Integers</h4>
+
+        <code>fun main(args: Array<String>) {<br/>
+
+    val first: Int = 10<br/>
+    val second: Int = 20<br/>
+
+    val sum = first + second<br/>
+
+    println("The sum is: $sum")<br/>
+}</code>
+
+    </div>
+    <div>
+        <h4>Example 3: Multiply Two Floating Point Numbers</h4>
+
+        <code>fun main(args: Array<String>) {<br/>
+
+    val first = 1.5f<br/>
+    val second = 2.0f<br/>
+
+    val product = first * second<br/>
+
+    println("The product is: $product")<br/>
+}</code>
+    </div>
+    <div>
+
+        <h4>Example 4: Swap two numbers using temporary variable</h4>
+
+        <code>fun main(args: Array<String>) {<br/>
+
+    var first = 1.20f<br/>
+    var second = 2.45f<br/>
+
+    println("--Before swap--")<br/>
+    println("First number = $first")<br/>
+    println("Second number = $second")<br/>
+
+    // Value of first is assigned to temporary<br/>
+    val temporary = first<br/>
+
+    // Value of second is assigned to first<br/>
+    first = second<br/>
+
+    // Value of temporary (which contains the initial value of first) is assigned to second<br/>
+    second = temporary<br/>
+
+    println("--After swap--")<br/>
+    println("First number = $first")<br/>
+    println("Second number = $second")<br/>
+}</code>
+    </div>
+</div>
+
+<a href="https://www.programiz.com/kotlin-programming/examples">Credit: Programiz</a>
 
 </html>

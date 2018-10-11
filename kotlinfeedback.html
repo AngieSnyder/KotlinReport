@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
-    <title>Kotlin Features</title>
+    <title>Kotlin Feedback</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="kotlin.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Kotlin</a>
+        <a class="navbar-brand" href="index.html">Kotlin</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -17,20 +18,31 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">History <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="kotlinhistory.html">History </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="kotlinfeatures.html">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Examples</a>
+                    <a class="nav-link" href="kotlinexamples.html">Examples</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Feedback</a>
+                    <a class="nav-link" href="kotlinfeatures.html">Feedback<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
     </nav>
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Feedback</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    </form>
+    <input class="btn btn-primary" type="submit" value="Submit">
 </body>
 
 </html>
